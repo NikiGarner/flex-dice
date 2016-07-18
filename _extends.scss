@@ -1,0 +1,71 @@
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: 5px solid #d9d9d9;
+  border-radius: 5px;
+  margin: 10px;
+  .pip {
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 10px solid black;
+  }
+}
+
+.second-face {
+  @extend .first-face;
+  align-items: baseline;
+  justify-content: space-between;
+  .pip {
+    margin: 8px;
+  }
+  .pip:nth-of-type(2) {
+    align-self: flex-end;
+  }
+}
+
+.third-face {
+  @extend .first-face;
+  align-items: baseline;
+  justify-content: space-between;
+  .pip {
+    margin: 5px;
+  }
+  .pip:nth-of-type(2) {
+    align-self: center;
+  }
+  .pip:nth-of-type(3) {
+    align-self: flex-end;
+  }
+}
+
+.fourth-face {
+  @extend .first-face;
+  align-items: baseline;
+  justify-content: space-between;
+  .pip {
+    margin: 5px;
+  }
+  .pip:nth-of-type(2) {
+    align-self: flex-end;
+  }
+  .pip:nth-of-type(3) {
+    align-self: flex-start;
+  }
+  .pip:nth-of-type(4) {
+    align-self: flex-end;
+  }
+}
+
+.fifth-face {
+  @extend .first-face;
+}
+
+.sixth-face {
+  @extend .first-face;
+}

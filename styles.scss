@@ -1,0 +1,14 @@
+@import "base";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display:flex;
+}
+
+.column {
+  display: flex;
+}
