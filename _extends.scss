@@ -46,26 +46,27 @@
 
 .fourth-face {
   @extend .first-face;
-  align-items: baseline;
   justify-content: space-between;
+  & .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .pip {
-    margin: 5px;
-  }
-  .pip:nth-of-type(2) {
-    align-self: flex-end;
-  }
-  .pip:nth-of-type(3) {
-    align-self: flex-start;
-  }
-  .pip:nth-of-type(4) {
-    align-self: flex-end;
+    margin: 10px;
   }
 }
 
 .fifth-face {
-  @extend .first-face;
+  @extend .fourth-face;
+  .pip {
+    margin: 5px;
+  }
 }
 
 .sixth-face {
-  @extend .first-face;
+  @extend .fourth-face;
+  .pip {
+    margin: 2px;
+  }
 }
